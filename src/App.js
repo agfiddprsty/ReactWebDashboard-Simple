@@ -19,7 +19,16 @@ class App extends Component {
           >
             Learn React
           </a>
+
+          <h1> Ini Header </h1>
         </header>
+        <body className="App-body">
+          <div> Hello World </div>
+        </body>
+        <footer className="App-footer">
+          <div> ini footer yakan </div>
+          <div> copyright FiiD17 </div>
+        </footer>
       </div>
     );
   }

@@ -18,6 +18,10 @@
   color: white;
 }
 
+.App-footer{
+  background-color: #dedede
+}
+
 .App-link {
   color: #61dafb;
 }
