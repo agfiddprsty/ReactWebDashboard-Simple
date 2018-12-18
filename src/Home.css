@@ -2,12 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
 nav{
     position: relative;
     width: 100%;
-    text-align: center;
-    align-items: center;
     height: 60px;
     background-color: #282c34;
     box-shadow: #888;
@@ -22,22 +19,30 @@ nav ul{
 nav ul li{
     float: left;
     display: block;
-    margin: -10px 30px 25px 15px;
+    font-size: 15px;
+    margin: -5px 30px 25px 15px;
+    align-self: center;
 }
 nav ul li a{
     text-decoration: none;
     color: #fff;
     font-family:  sans-serif;
-    font-size: copyright FiiD17  15px;
+    font-size: 15px;
 }
 nav ul li a:hover{
     color: #55a8fd;
+    text-decoration: none;
 }
 
 .Hom {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: #f7f7f7;
+}
+
+.Hom-body {
+  background-color: #f7f7f7;
 }
 
 .Hom-header {
@@ -51,18 +56,28 @@ nav ul li a:hover{
   color: white;
 }
 
-.Hom-silabus {
+.col{
+  text-align: center;
+  width: 90%;
   position: relative;
-  float: left;
-  margin: 5px 30px 0px 135px;
+  min-height: 250px;
+  margin-top: 30px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding-left: 20px;
   box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.2);
 }
 
-.Hom-batch {
-  position: relative;
-  float: left;
-  margin: 5px 30px 0px 15px;
-  box-shadow: 0 0 7px 0px rgba(136, 136, 136, 0.2);
+.silabus{
+  margin-left: 11%;
+  margin-right: 1%;
+  background-color: #fff;
+}
+
+.batch{
+  margin-left: 1%;
+  background-color: #fff;
+  margin-right: 11%;
 }
 
 .Hom-profile{
@@ -98,6 +113,7 @@ section#box-profile{
     height: 200px;
     border-radius: 300px;
     float: left;
+    margin-top: -10px;
     top: 25px;
     margin-left: 20px;
 }
@@ -176,8 +192,22 @@ section#box-profile{
     color: #fff;
     box-shadow:  0 0 7px 0 px #55a8fd;
     border: 1px solid #55a8fd;
-
 }
+
+.btn-primary{
+  margin-top: 20px;
+}
+
+.btn-outline-primary{
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.buton{
+  width: 500px;
+  height: 50px;
+}
+
 .border-blue{
     color: #55a8fd;
     border: 1px solid #55a8fd;

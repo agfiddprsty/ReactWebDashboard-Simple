@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './Home.css';
+import Header from './Header.js';
+import Footer from './Footer.js';
+import Batch from './ListBatch';
 import profile from './profile.jpeg'
+import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 
 class Home extends Component {
   render() {
     return (
       <div className="Hom">
-        <header className="Hom-header">
-            <nav>
-              <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PROFILE</a></li>
-                <li><a href="#">ABOUT</a></li>
-              </ul>
-            </nav>
-        </header>
+        <Header />
         <body className="Hom-body">
           <section id="box-profile">
           <div className="img-profile">
@@ -25,9 +20,10 @@ class Home extends Component {
           </div>
           <div class="description">
               <h1>Agfid Danu Prasetyo</h1>
-              <p>Front End Maybe</p>
-              <a href="#" className="button bg-green">Edit</a>
-              <a href="#" className="button border-blue">Resume</a>
+              <p>Android Dev</p>
+              <a href="#" className="btn btn-primary" role="button">Edit</a>
+              <a href="#" className="btn btn-outline-primary">Resume</a>
+              <a href="#" className="btn btn-outline-primary">Start Test</a>
           </div>
           <div className="information">
               <div className="data">
@@ -52,14 +48,12 @@ class Home extends Component {
               </div>
           </div>
       </section>
-          <div className="Hom-silabus"> Ini Silabus </div>
-          <div className="Hom-batch"> Daftar Batch </div>
-          <button type="button" class="btn btn-primary">MULAI TEST</button>
+      <div class="row">
+        <div class="col silabus"> silabus </div>
+        <div class="col batch"> batch </div>
+      </div>
         </body>
-        <footer className="Hom-footer">
-          <div> ini footer yakan </div>
-          <div> copyright FiiD17 </div>
-        </footer>
+        <Footer />
       </div>
     );
   }
